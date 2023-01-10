@@ -7,4 +7,5 @@ def index():
 
 @app.route('/fav_rappers')
 def fav_rappers():
-    return render_template('fav_rappers.html')
+    rappers = ['Dylan', 'Dylan', 'Dylan', 'Dylan', 'Dylan']
+    return render_template('fav_rappers.html', rappers=rappers)
